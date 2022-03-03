@@ -43,5 +43,7 @@ function newItem(){
   // Function deleteListItem is activated with a click on the button
   crossOutButton.on("click", deleteListItem);
 
+  // 4. Reordering the items:
+  $('#list').sortable();
 
 }
