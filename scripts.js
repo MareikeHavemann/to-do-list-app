@@ -14,5 +14,16 @@ function newItem(){
     $('#list').append(li);
   }
 
+  // 2. Crossing out an item from the list of items:
+
+  // Changes li class to strike. CSS adds 'line through
+  function crossOut() {
+    li.toggleClass("strike");
+  }
+  // eventListener calls crossOut, then toggles li class
+  li.on("dblclick", function crossOut() {
+    li.toggleClass("strike");
+  });
+
 
 }
